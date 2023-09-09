@@ -1,12 +1,20 @@
-import { Link, createSearchParams } from "react-router-dom";
+import { Link, createSearchParams, useNavigate } from "react-router-dom";
 
 export const SampleHome = () => {
+  // useNavigate = ボタンのクリックなどでルーティングを行う場合に使用する関数
+  const navigate = useNavigate();
+
+  // createSearchParams = クエリパラメータを作成する関数
   const params = createSearchParams({
     query1: "value3",
     query2: "value4",
   }).toString();
 
-  // Link  = リンク作成
+  /**
+   * Link  = リンク作成
+   * <Outlet /> =
+   */
+
   return (
     <>
       <h1>Sample Home</h1>
@@ -33,6 +41,8 @@ export const SampleHome = () => {
             <Link to="page3_hi">Sample Page3 Hi</Link>
           </li>
         </ul>
+
+        <button onClick={() => navigate("page1")}>Sample Page1</button>
       </nav>
     </>
   );
