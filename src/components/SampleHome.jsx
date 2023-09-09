@@ -26,6 +26,12 @@ export const SampleHome = () => {
           <li>
             <Link to={`page2?${params}`}>Sample Page2 With Query2</Link>
           </li>
+          <li>
+            <Link to="page3_hello">Sample Page3 Hello</Link>
+          </li>
+          <li>
+            <Link to="page3_hi">Sample Page3 Hi</Link>
+          </li>
         </ul>
       </nav>
     </>
