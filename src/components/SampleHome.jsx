@@ -40,6 +40,9 @@ export const SampleHome = () => {
           <li>
             <Link to="page3_hi">Sample Page3 Hi</Link>
           </li>
+          <li>
+            <Link to="page4">Sample Page4</Link>
+          </li>
         </ul>
 
         <button onClick={() => navigate("page1")}>Sample Page1</button>
